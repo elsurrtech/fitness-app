@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quiqle.quiqlefitness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.quiqle.quiqlefitness.MyFirebasemessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <activity android:name="com.quiqle.quiqlefitness.PrivacyPolicy"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.tools.TipsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.CongratsActivity"
+            android:theme="@style/congoTheme"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.quiqle.quiqlefitness.tools.DietChartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.tools.ToolsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.tools.BmiCalculatorActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.Legs"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.legs.legs_six"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.legs.legs_five"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.legs.legs_four"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.legs.legs_three"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.legs.legs_two"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.legs.legs_one"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.armsandchest.ac_six"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.armsandchest.ac_five"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.armsandchest.ac_four"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.armsandchest.ac_three"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.armsandchest.ac_two"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.armsandchest.ac_one"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.ArmsAndChest"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.shoulderback.sb_six"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.shoulderback.sb_five"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.shoulderback.sb_four"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.shoulderback.sb_three"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.shoulderback.sb_two"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.shoulderback.sb_one"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.ShoulderBack"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.quiqle.quiqlefitness.abs.abs_six"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.abs.abs_five"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.abs.abs_four"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.abs.abs_three"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.abs.abs_two"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.StartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.abs.abs_one"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.quiqle.quiqlefitness.AbsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.quiqle.quiqlefitness.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name="com.quiqle.quiqlefitness.MainActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

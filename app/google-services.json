@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "144932158143",
+    "firebase_url": "https://fitexample-4dcf7.firebaseio.com",
+    "project_id": "fitexample-4dcf7",
+    "storage_bucket": "fitexample-4dcf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144932158143:android:a8b9c84176fba2cd1b240a",
+        "android_client_info": {
+          "package_name": "com.quiqle.quiqlefitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144932158143-bopu1mh58lc7qbespcckjif9a8r6en7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quiqle.quiqlefitness",
+            "certificate_hash": "4b2b84c20e2ddbfc6e44cac5f4639254faf762d0"
+          }
+        },
+        {
+          "client_id": "144932158143-n2r1pp2htj5h4ka1s437v6e4666s24pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiZoXkKlz-A_EJT5yDBu94M3-LUZ7H1so"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144932158143-n2r1pp2htj5h4ka1s437v6e4666s24pl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

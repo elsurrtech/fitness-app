@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/i1"
+            android:layout_height="match_parent"
+            android:background="@drawable/quit"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Really? "
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="You are on the way towards success,\n Do you really want to Quit?"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

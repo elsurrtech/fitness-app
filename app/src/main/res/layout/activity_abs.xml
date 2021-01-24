@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTint="?attr/backgroundColor"
+    android:layout_height="match_parent"
+    tools:context=".AbsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:contentScrim="@color/frColor"
+            app:title="Abs Workout"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/pic_abs"
+                android:scaleType="centerCrop"
+                />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                >
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/ic_abs_info"
+     android:backgroundTint="?attr/backgroundColor"
+     app:layout_anchorGravity="bottom|right|end"
+     app:layout_anchor="@id/appBarLayout"
+     android:layout_marginEnd="32dp"
+
+     />-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:background="?attr/backgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:background="?attr/backgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/absOne"
+                app:cardCornerRadius="5dp"
+                android:backgroundTint="?attr/card_background"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                   android:background = "?attr/card_background"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@drawable/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Level 1"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9:45"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/Text_Color"
+                            android:textSize="30sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/native_banner_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/absTwo"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#242331"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@drawable/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Level 2"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background = "?attr/card_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:05"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/Text_Color"
+                            android:textSize="30sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/banner_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/absThree"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#242331"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@drawable/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Level 3"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background = "?attr/card_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8:40"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/Text_Color"
+                            android:textSize="30sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/native_banner_ad_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/absFour"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#242331"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@drawable/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Level 4"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background = "?attr/card_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:40"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/Text_Color"
+                            android:textSize="30sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/banner_container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/absFive"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#242331"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@drawable/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Level 5"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background = "?attr/card_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8:20"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/Text_Color"
+                            android:textSize="30sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/nativeAdLayout"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/absSix"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#242331"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@drawable/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Level 6"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="22sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background = "?attr/card_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:10"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="?attr/Text_Color"
+                            android:textSize="30sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:src="@drawable/ic_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

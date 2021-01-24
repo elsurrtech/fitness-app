@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FE0100"
+    tools:context=".CongratsActivity">
+
+    <TextView
+        android:id="@+id/congo"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Hurray!!"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/congo"
+        android:scaleType="centerCrop"
+        android:id="@+id/gifCongrats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/congrats"
+        />
+
+    <TextView
+        android:id="@+id/t1"
+        android:text="You have cleared a new Level."
+        android:layout_below="@+id/gifCongrats"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:text="Lets head towards another level"
+        android:layout_below="@+id/t1"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnGo"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/t2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_margin="30dp"
+        android:text="Lets go"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

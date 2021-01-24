@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:background="?attr/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/settings"
+            android:src="@drawable/ic_settings"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/tips"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_tips"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/toolBar"
+            android:layout_toStartOf="@+id/settings"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_tools"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:backgroundTint="?attr/card_background"
+                app:cardCornerRadius="6dp"
+                android:layout_height="wrap_content">
+
+                <com.custom.sliderimage.logic.SliderImage
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:backgroundTint="?attr/card_background"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:background="@drawable/pic_abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/r1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Abs"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/r1_1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="100dp">
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/btnAbs"
+                            android:layout_margin="10dp"
+                            android:layout_width="180dp"
+                            android:text="Start"
+                            android:background="@drawable/background_one"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/white"
+                            android:layout_height="60dp"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/native_banner_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:backgroundTint="?attr/card_background"
+                android:layout_width="match_parent"
+                android:background="@drawable/pic_sb"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:background="@drawable/pic_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/r2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Shoulder and Back"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="25sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/r2_1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="100dp">
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/btnShoulder"
+                            android:layout_width="180dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="11dp"
+                            android:layout_marginBottom="9dp"
+                            android:background="@drawable/background_one"
+                            android:text="Start"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/banner_container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:background="@drawable/pic_ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/r3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Arms and Chest"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="25sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/r3_1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="100dp">
+
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/btnArms"
+                            android:layout_margin="10dp"
+                            android:layout_width="180dp"
+                            android:text="Start"
+                            android:background="@drawable/background_one"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/white"
+                            android:layout_height="60dp"/>
+                    </RelativeLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/native_banner_ad_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="200dp">
+
+                <RelativeLayout
+                    android:background="@drawable/pic_legs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/r4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="Legs"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"
+                            android:layout_marginStart="20dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/r4_1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="100dp">
+
+                        <com.github.rubensousa.raiflatbutton.RaiflatButton
+                            android:id="@+id/btnLegs"
+                            android:layout_margin="10dp"
+                            android:layout_width="180dp"
+                            android:text="Start"
+                            android:background="@drawable/background_one"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/white"
+                            android:layout_height="60dp"/>
+                    </RelativeLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

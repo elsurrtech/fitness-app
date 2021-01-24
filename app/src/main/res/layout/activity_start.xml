@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:background="?attr/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:text="Start Now!"
+            android:textColor="?attr/Text_Color"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <fragment
+        android:layout_below="@+id/r1"
+        android:id="@+id/f1"
+        android:layout_above="@+id/r2"
+        android:layout_width="match_parent"
+        android:name="com.quiqle.quiqlefitness.StartActivityFragment"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_above="@+id/p1"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/card_background"
+        >
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textNext"
+            android:layout_toStartOf="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="NEXT"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_below="@+id/banner_container"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_next"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/buttonNext"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:layout_below="@+id/banner_container"
+            android:id="@+id/buttonfinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Finish"
+            android:textColor="@color/white"
+            android:theme="@style/Widget.MaterialComponents.Button"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/p1"
+        android:background="?attr/card_background"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="backgroundColor">#eeeeee</item>
+        <item name="card_background">#ffffff</item>
+        <item name="Text_Color">#000000</item>
+        <item name="Button_Color">#e91e63</item>
+
+        <item name="text_tint">#696969</item>
+        <item name="android:navigationBarColor">#eeeeee</item>
+
+    </style>
+
+    <style name="darkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/bgColor</item>
+        <item name="android:statusBarColor">@color/bgColor</item>
+        <item name="backgroundColor">@color/bgColor</item>
+        <item name="card_background">@color/frColor</item>
+        <item name="Text_Color">#ffffff</item>
+        <item name="Button_Color">@color/colorPrimary</item>
+
+        <item name="text_tint">#C0C0C0</item>
+
+    </style>
+
+    <style name="congoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">#FE0100</item>
+        <item name="backgroundColor">@color/bgColor</item>
+        <item name="android:statusBarColor">#FE0100</item>
+        <item name="card_background">@color/frColor</item>
+        <item name="Text_Color">#ffffff</item>
+        <item name="Button_Color">@color/colorPrimary</item>
+
+        <item name="text_tint">#C0C0C0</item>
+
+    </style>
+
+    <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/backColor</item>
+        <item name="backgroundColor">@color/bgColor</item>
+        <item name="android:statusBarColor">@color/backColor</item>
+        <item name="card_background">@color/frColor</item>
+        <item name="Text_Color">#ffffff</item>
+        <item name="Button_Color">@color/colorPrimary</item>
+
+        <item name="text_tint">#C0C0C0</item>
+
+    </style>
+
+    <style name="settingsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/backColor</item>
+        <item name="backgroundColor">@color/bgColor</item>
+        <item name="android:statusBarColor">@color/backColor</item>
+        <item name="card_background">@color/frColor</item>
+        <item name="Text_Color">#ffffff</item>
+        <item name="Button_Color">@color/colorPrimary</item>
+
+        <item name="text_tint">#C0C0C0</item>
+
+    </style>
+
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="RaiflatButtonPrimaryStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+
+</resources>

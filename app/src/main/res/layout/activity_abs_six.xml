@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".abs.abs_six">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:background="?attr/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:text="Lets Go!"
+            android:textColor="?attr/Text_Color"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/r1"
+        android:layout_above="@+id/btnStart"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:text="Start"
+        android:textColor="@color/white"
+        android:id="@+id/btnStart"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

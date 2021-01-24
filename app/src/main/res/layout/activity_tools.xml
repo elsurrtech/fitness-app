@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".tools.ToolsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:background="?attr/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:text="Tools"
+            android:textColor="?attr/Text_Color"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bmiCalculator"
+        android:background="@color/colorPrimary"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:text="BMI Calculator"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/dietChart"
+        android:background="@color/colorPrimary"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:text="Diet Chart"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <com.facebook.ads.NativeAdLayout
+        android:id="@+id/nativeAdLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+</ScrollView>
